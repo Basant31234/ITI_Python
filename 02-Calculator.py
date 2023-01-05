@@ -1,94 +1,62 @@
 
+import os
+
+
 
 while True:
-	mode=int(input("Standard mode      press 1\nProgrammer mode    press 2\nConversion mode    press 3\nExit               press 0\n"))
+	os.system('cls')
+	print("\n\n\t------------Welcome to ITI calculator------------\n")
+	mode = int (input ("\n\n\n\tStandard mode      press 1\n\tProgrammer mode    press 2\n\tConversion mode    press 3\n\tExit               press 0\n\n\n\tPLEASE CHOOSE THE OPERATION NUMBER : "))
+	os.system('cls')
 	
-	
-	# Programmer mode
+	# Standard mode
 	if mode ==1 :
-	
-		n1=int(input("\nThe first number:"))
-		n2=int(input("The second number:"))
+		
 		while True:
+		
+			print("\n\n\t------------STANDARD MODE------------\n\n\n")
+			print(" \tFOR EXAMPLE : 2 * 3 + 6 - 9 \n\n")
+			Result=eval(input("\n\tEnter the numbers and the operations [ + - * / % ] \n\t"))
+			print("\n\tResult = ",Result)
 			
-			oper=int(input("\nchoose the operation\n1-addition\n2-subtraction\n3-multiplication\n4-division\n5-module\n6-power\n7-square root\n\n0-EXIT\n"))
-			if oper ==1:
-				print("\n",n1,"+",n2,"=",n1+n2)
-				
-			elif oper ==2:
-				print("\n",n1,"-",n2,"=",n1-n2)	
-				
-			elif oper ==3:
-				print("\n",n1,"*",n2,"=",n1*n2)
-				
-			elif oper ==4:
-			
-				if n2==0:
-					print(n2," ERROR")
-				else:
-					print("\n",n1,"/",n2,"=",n1/n2)
-					
-			elif oper ==5:
-				print("\n",n1,"%",n2,"=",n1%n2)
-				
-			elif oper ==0:
-				break
+			exit=int(input("\n\n\n\n\n\t\t\tEXIT -----> PRESS 0 "))
+			break
 		
 	# Programmer mode	
 	elif mode ==2 :
-	
-		n1=int(input("\nThe first number:"))
-		n2=int(input("The second number:"))
-
-		print(n1,"=",bin(n1))
-		print(n2,"=",bin(n2))
 
 		while True:
+		
+			print("\n\n\t------------PROGRAMMER MODE------------\n\n\n")
+			print(" \tFOR EXAMPLE : 2 << 3 \n\n")
+			Result=eval(input("\n\tEnter the numbers and the operations [ << >> &  | ^ ~] \n\t"))
+			print("\n\tResult = ",Result," = ", bin(Result))
 			
-			oper=int(input("\nchoose the operation\n1-shift right\n2-shift left\n3-AND\n4-OR\n5-XOR\n6-NOT\n\n0-EXIT\n"))
-			
-			if oper ==1:
-				print("\n",n1,">>",n2,"=",n1>>n2,"=",bin(n1>>n2))
-				
-			elif oper ==2:
-				print("\n",n1,"<<",n2,"=",n1<<n2,"=",bin(n1<<n2))
-				
-			elif oper ==3:
-				print("\n",n1,"&",n2,"=",n1&n2,"=",bin(n1&n2))
-				
-			elif oper ==4:
-				print("\n",n1,"|",n2,"=",n1 | n2,"=",bin(n1 | n2))
-				
-			elif oper ==5:
-				print("\n",n1,"^",n2,"=",n1 ^ n2,"=",bin(n1 ^ n2))
-				
-			elif oper ==6:
-				print("\n~",n1,"=",~n1,"=",bin(~n1))
-				
-			elif oper ==0:
-				break
-				
+			exit=int(input("\n\n\n\n\n\t\t\tEXIT -----> PRESS 0 "))
+			break	
 	
 	# Conversion mode	
 	
-	elif mode ==3 :		
-		n1=int(input("\nThe integer number:"))
+	elif mode ==3 :	
+		print("\n\n\t------------CONVERSIOM MODE------------\n\n\n")
+		n1=int(input("\n\tENTER AN INTEGER NUMBER : "))
 		
 		while True:	
-	
-			oper=int(input("\nchoose the operation\n1-TO Binary\n2-To hexa\n3-To oct\n0-EXIT\n"))	
+			
+			oper=int(input("\n\tchoose the operation\n\t  1-TO Binary\n\t  2-To hexa\n\t  3-To oct\n\t  0-EXIT\n\n\n\t THE OPERATION NUMBER IS "))	
 				
 			if oper ==1:
-				print("\n",n1,"=",bin(n1))
+				print("\n\t THE BINARY OF ",n1," = ",bin(n1))
 				
 			elif oper ==2:
-				print("\n",n1,"=",hex(n1))
+				print("\n\t THE HEXA OF ",n1,"   = ",hex(n1))
 				
 			elif oper ==3:
-				print("\n",n1,"=",oct(n1))
+				print("\n\t THE OCTA OF ",n1,"   = ",oct(n1))
 				
-			elif oper ==0:
-				break
+			exit=int(input("\n\n\n\n\n\t\t\tEXIT -----> PRESS 0 "))
+			break	
+				
 				
 				
 	elif mode ==0:
