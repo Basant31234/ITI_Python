@@ -1,0 +1,22 @@
+
+
+
+   ---Welcome to ITI shop---
+
+====  ========  ==========  ======
+ ..   Fruits     QUANTITY    COST
+====  ========  ==========  ======
+ 0    orange        5         25
+ 1    apple         5         50
+ 2    kiwi          0         0
+====  ========  ==========  ======
+TOTAL PRICE :                 75
+
+prices include VAT
+--------------------------------
+
+SERVED BY :BASANT KARIEM
+Brought to you by ITI SHOP
+
+--------------------------------
+Mon Jan  2 21:52:09 2023
