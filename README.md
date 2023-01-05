@@ -1,4 +1,4 @@
-# ITI_Python_Task01
+# ITI_Python
 
 
 01-rotating arrow
