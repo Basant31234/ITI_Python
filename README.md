@@ -1,5 +1,15 @@
 # ITI_Python_Task01
-ITI_Python_Task01(00-rotating arrow/ 01-grocary project/ 02-Calculator with 2 modes)
+
+
+01-rotating arrow
 
 
 ![](https://github.com/Basant31234/ITI_Python_Task01/blob/main/ezgif.com-gif-maker%20(2).gif)
+
+
+ 02-Calculator with 3 modes)
+
+
+
+
+![](https://github.com/Basant31234/ITI_Python_Task01/blob/main/calculator.gif)
